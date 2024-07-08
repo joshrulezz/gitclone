@@ -21,7 +21,7 @@ const HomePage = () => {
 					headers : {
 						authorization : `token ${import.meta.env.VITE_GITHUB_API_KEY}`,
 					},
-				});
+				})
 				const userProfile = await userRes.json();
 				setUserProfile(userProfile);
 
